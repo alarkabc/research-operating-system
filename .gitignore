@@ -104,3 +104,6 @@ build/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Logs Folder
+logs/
