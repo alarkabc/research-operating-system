@@ -3,24 +3,52 @@
 
 class EmbeddingModel:
 
-    def __init__(self,
-                 model_name="all-MiniLM-L6-v2"):
+    def __init__(
+        self,
+        model_name="all-MiniLM-L6-v2"
+    ):
 
         print("Loading embedding model...")
 
         self.model = SentenceTransformer(model_name)
 
-    def embed(self, text: str):
+    def embed(
+        self,
+        text
+    ):
 
         return self.model.encode(text).tolist()
+
+    def embed_batch(
+        self,
+        texts
+    ):
+
+        return self.model.encode(texts).tolist()
 
 
 if __name__ == "__main__":
 
     model = EmbeddingModel()
 
-    vector = model.embed(
-        "AI-assisted cyberattacks"
+    vectors = model.embed_batch(
+
+        [
+
+            "Artificial Intelligence",
+
+            "Cybersecurity",
+
+            "Quantum Computing"
+
+        ]
+
     )
 
-    print("Embedding dimension:", len(vector))
+    print(
+
+        len(vectors),
+
+        len(vectors[0])
+
+    )
