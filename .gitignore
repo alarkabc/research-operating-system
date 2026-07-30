@@ -1,20 +1,106 @@
-﻿# Python
-.venv/
+﻿# ===========================
+# Python
+# ===========================
+
 __pycache__/
 *.py[cod]
+*$py.class
 
-# IDE
-.vscode/
-.idea/
+# Virtual Environments
 
-# Environment
+.venv/
+venv/
+env/
+
+# Environment Variables
+
 .env
 .env.*
 
+# IDE
+
+.vscode/
+.idea/
+
+# OS Files
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ===========================
+# Generated Images
+# ===========================
+
+page.png
+*.png
+
+# ===========================
 # Logs
-logs/
+# ===========================
+
 *.log
 
-# OS
-Thumbs.db
-.DS_Store
+# ===========================
+# Vector Databases
+# ===========================
+
+*.faiss
+*.index
+
+vector_db/
+index/
+
+# ===========================
+# Research Data
+# ===========================
+
+downloads/
+papers/
+datasets/
+data/
+cache/
+
+# ===========================
+# HuggingFace Cache
+# ===========================
+
+.huggingface/
+hf_cache/
+
+# ===========================
+# ChromaDB
+# ===========================
+
+chroma/
+chromadb/
+
+# ===========================
+# Jupyter
+# ===========================
+
+.ipynb_checkpoints/
+
+# ===========================
+# Temporary Files
+# ===========================
+
+*.tmp
+*.bak
+*.swp
+
+# ===========================
+# Build
+# ===========================
+
+dist/
+build/
+*.egg-info/
+
+# ===========================
+# Testing
+# ===========================
+
+.pytest_cache/
+.coverage
+htmlcov/
